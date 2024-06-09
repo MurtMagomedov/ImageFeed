@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ImagesListCell: UITableViewCell {
+final class ImagesListCell: UITableViewCell {
     @IBOutlet var likeButton: UIButton!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var imageCell: UIImageView!
