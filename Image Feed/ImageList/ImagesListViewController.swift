@@ -13,7 +13,7 @@ final class ImagesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0)
         
         // Set zero spacing between cells
         tableView.separatorInset = .zero
@@ -43,7 +43,7 @@ extension ImagesListViewController: UITableViewDelegate {
             return 0
         }
         
-        let imageInsets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        let imageInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
         let imageViewWidth = tableView.bounds.width - imageInsets.left - imageInsets.right
         let imageWidth = image.size.width
         let scale = imageViewWidth / imageWidth
