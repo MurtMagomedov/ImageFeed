@@ -51,6 +51,7 @@ final class ProfileViewController: UIViewController {
         
         guard let avatar = avatarImage else {return}
         name.text = "Суворов Александр"
+        name.font = UIFont.boldSystemFont(ofSize: 23)
         name.topAnchor.constraint(equalTo: avatar.safeAreaLayoutGuide.bottomAnchor, constant: 8).isActive = true
         name.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
         self.nameLabel = name
@@ -63,6 +64,7 @@ final class ProfileViewController: UIViewController {
         user.textColor = .gray
         
         user.text = "@aleksandr-su"
+        user.font = user.font.withSize(13)
         guard let name = nameLabel else {return}
         user.topAnchor.constraint(equalTo: name.safeAreaLayoutGuide.bottomAnchor, constant: 8).isActive = true
         user.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
@@ -75,7 +77,9 @@ final class ProfileViewController: UIViewController {
         view.addSubview(description)
         description.textColor = .white
         
+        
         description.text = "Hello World"
+        description.font = description.font.withSize(13)
         guard let user = userLabel else {return}
         description.topAnchor.constraint(equalTo: user.safeAreaLayoutGuide.bottomAnchor, constant: 8).isActive = true
         description.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
